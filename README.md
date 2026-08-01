@@ -1,74 +1,33 @@
-# Sanjana Gunda — Animated Portfolio
+# Sanjana Gunda Portfolio
 
-A modern, immersive portfolio built with React, Vite, Three.js, React Three Fiber and Framer Motion.
+Static multi-page portfolio inspired by the structure of Karthik's GitHub Pages portfolio.
 
-## Features
+## Why this version is easier
 
-- Interactive 3D hero scene
-- Smooth scroll and reveal animations
-- Responsive glassmorphism interface
-- Project cards based on Sanjana's public GitHub repositories
-- LinkedIn and GitHub links
-- GitHub Pages-ready Vite configuration
+This project uses only HTML, CSS and JavaScript. There is no React build, no `dist` folder and no `gh-pages` package. GitHub Pages can publish directly from the `main` branch.
 
 ## Run locally
 
 ```bash
-npm install
-npm run dev
+cd sanjana-portfolio-like-karthik
+python3 -m http.server 8000
 ```
 
-Open the local URL shown by Vite.
+Open `http://localhost:8000`.
 
-## Build
+## Deploy
 
-```bash
-npm run build
-npm run preview
-```
+Copy these files into the root of `gundasanjana08/sanjana-4d-portfolio`, commit and push.
 
-## Deploy to GitHub Pages
+Then configure GitHub Pages:
 
-Create a repository such as `sanjana-portfolio`, then run:
+- Source: Deploy from a branch
+- Branch: main
+- Folder: /(root)
 
-```bash
-git init
-git add .
-git commit -m "Build animated professional portfolio"
-git branch -M main
-git remote add origin https://github.com/gundasanjana08/sanjana-portfolio.git
-git push -u origin main
-npm run deploy
-```
+## Before publishing
 
-In GitHub, open **Settings → Pages** and select:
-
-- Source: **Deploy from a branch**
-- Branch: **gh-pages**
-- Folder: **/(root)**
-
-The site should become available at:
-
-`https://gundasanjana08.github.io/sanjana-portfolio/`
-
-## Personalization before publishing
-
-Update these items in `src/main.jsx`:
-
-1. Add Sanjana's verified email in the contact link.
-2. Refine the introduction with her current role and exact experience.
-3. Replace or reorder projects as needed.
-4. Add a resume PDF inside `public/` and link it from the hero section.
-5. Add a professional photograph if desired.
-
-## Recommended repository name
-
-For the cleanest personal site URL, create the repository:
-
-`gundasanjana08.github.io`
-
-Then the final URL becomes:
-
-`https://gundasanjana08.github.io/`
-
-For that repository, push the project normally and configure Pages to publish from GitHub Actions or the `gh-pages` branch.
+- Add Sanjana's verified email to `pages/contact.html`.
+- Add her resume as `assets/Sanjana_Gunda_Resume.pdf` and link it if desired.
+- Update About with verified employment, education and certifications.
+- The Writing page contains original draft posts based on her project themes. Add dates or personal results before publishing.
